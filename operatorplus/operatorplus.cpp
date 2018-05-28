@@ -14,7 +14,17 @@ public:
 	void display();
 	CFeet add(CFeet & objf);
 	CFeet operator +(CFeet & objf);
+	int getfeet();
+	int getinches();
 };
+int CFeet::getfeet()
+{
+	return feet;
+}
+int CFeet::getinches()
+{
+	return inches;
+}
 void CFeet::setvalue(int fe, int in)
 {
 	feet = fe+in/12;
